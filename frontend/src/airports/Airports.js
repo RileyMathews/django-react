@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Airport from './Airport'
 
 
 class Airports extends Component {
@@ -8,8 +9,8 @@ class Airports extends Component {
         return (
             <React.Fragment>
                 <h1>airports</h1>
-                {this.props.airports.forEach(airport => (
-                    <p>{airport.name}</p>
+                {this.props.airports.map(airport => (
+                    <Airport airport={airport} key={parseInt(airport.id, 10)}/>
                 ))}
             </React.Fragment>
         )
