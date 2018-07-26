@@ -3,7 +3,7 @@ from api import models
 
 class Airport_Serializer(serializers.ModelSerializer):
     """ serializer for the airport model """
-    class meta:
+    class Meta:
         fields = (
             'id',
             'name',
