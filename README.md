@@ -3,7 +3,7 @@ Welcome.
 
 This app is a prototype for using react inside of a django project.
 
-## instructions
+## setup django
 This app requires a virtual env with the following packages installed
 1. django
 1. djangorestframework
